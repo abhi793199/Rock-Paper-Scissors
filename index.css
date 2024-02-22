@@ -1,0 +1,536 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    background-color:rgb(233, 232, 232);
+}
+
+.action_div{
+    margin:10px;
+}
+
+.nav-bar{
+    width: 100vw;
+    height: 5em;
+    background-color: black;
+    margin-bottom: 10px;
+}
+
+.icon{
+    height: 80px;
+    width: 80px;
+    position: absolute;
+    left:350px;
+    /* background-color: red; */
+    background-image: url(images/rps.png);
+    background-size: cover;
+    
+}
+
+h3{
+    margin-left: 50px; 
+    color: red;
+}
+
+.name{
+    position: absolute;
+    top:10px;
+    left:450px;
+    margin: 0px;
+    color: white;
+    font-size: 3rem;
+}
+
+.rock{
+    width:80px;
+    height:80px;
+    border-radius: 50%;
+    background-image: url(images/rock.png);
+    background-size:contain;
+    
+}
+
+.rock-animation{
+    animation: drag-rock .5s linear 0s forwards;
+
+}
+
+@keyframes drag-rock{
+    0%{
+        z-index: 2;
+        transform: translate(0px,0px);
+    }
+    100%{
+        z-index: 2;
+        transform: translate(122px,228px);
+    }
+    
+
+}
+
+.rock:hover{
+    border: 3px solid black;
+    box-sizing: border-box;
+    cursor: pointer;
+    
+}
+
+.paper{
+    width:80px;
+    height:80px;
+    border-radius: 50%;
+    background-image: url(images/paper.png);
+    background-size: cover;
+}
+
+.paper:hover{
+    border: 3px solid black;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+
+.paper-animation{
+    animation: drag-paper .5s linear 0s forwards;
+}
+
+@keyframes drag-paper{
+    0%{
+        z-index: 2;
+        transform: translate(0px,0px);
+    }
+    100%{
+        z-index: 2;
+        transform: translate(20px,225px);
+    }
+    
+
+}
+
+.scissor{
+    width:80px;
+    height:80px;
+    border-radius: 50%;
+    background-image: url(images/scissor.jpeg);
+    background-size: cover;
+}
+
+.scissor:hover{
+    border: 3px solid black;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.scissor-animation{
+    animation: drag-scissor .5s linear 0s forwards;
+}
+
+@keyframes drag-scissor{
+    0%{
+        z-index: 2;
+        transform: translate(0px,0px);
+    }
+    100%{
+        z-index: 2;
+        transform: translate(-78px,226px);
+    }
+    
+
+}
+
+.rock-c{
+    width:80px;
+    height:80px;
+    border-radius: 50%;
+    background-image: url(images/rock.png);
+    background-size:contain;
+}
+
+.rock-c-animation{
+    animation: drag-rock-c .5s linear 0s forwards;
+}
+
+@keyframes drag-rock-c{
+    0%{
+        z-index: 2;
+        transform: translate(0px,0px);
+    }
+    100%{
+        z-index: 2;
+        transform: translate(78px,228px);
+    }
+}
+
+
+.paper-c{
+    width:80px;
+    height:80px;
+    border-radius: 50%;
+    background-image: url(images/paper.png);
+    background-size: cover;
+}
+
+.paper-c-animation{
+    animation: drag-paper-c .5s linear 0s forwards;
+}
+
+@keyframes drag-paper-c{
+    0%{
+        z-index: 2;
+        transform: translate(0px,0px);
+    }
+    100%{
+        z-index: 2;
+        transform: translate(-25px,226px);
+    }
+
+}
+
+.scissor-c{
+    width:80px;
+    height:80px;
+    border-radius: 50%;
+    background-image: url(images/scissor.jpeg);
+    background-size: cover;
+}
+
+.scissor-c-animation{
+    animation: drag-scissor-c .5s linear 0s forwards;
+}
+
+@keyframes drag-scissor-c{
+    0%{
+        z-index: 2;
+        transform: translate(0px,0px);
+    }
+    100%{
+        z-index: 2;
+        transform: translate(-123px,226px);
+    }
+    
+
+}
+
+
+.me{
+    width: 300px;
+    height:130px;
+    
+    border: 5px solid rgb(71,71,71);
+    background-color: rgba(0, 0, 255, 0.6);
+}
+
+.me-section{
+    display: flex;
+    padding-top: 10px;
+    align-items: center;
+    justify-content: space-around;
+}
+.computer{
+    width: 300px;
+    height:130px;
+    
+    border: 5px solid rgb(71, 71, 71);
+    background-color: rgba(255,0, 0, 0.6);
+}
+
+.computer-section{
+    display: flex;
+    padding-top: 10px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.option-select{
+    display: flex; 
+    justify-content: space-evenly;
+}
+
+.name-tag{
+    margin-top: 5px;
+    text-align: center;
+}
+
+.vs{
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vs-h1{
+    margin: 0px; 
+}
+
+.js-section{
+    height: 200px;
+    width: 75%;
+    position: absolute;
+    left: 140px;
+    /* top:30px; */
+    margin: 30px;
+    background-color: rgb(209, 209, 189);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.my-value{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.answer{
+    height: 130px;
+    width: 300px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.computer-value{
+    height:80px;
+    width: 80px;
+    border-radius: 50%;
+    background-color:rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.score{
+    height: 130px;
+    width: 300px;
+    position: absolute;
+    top: 490px;
+    left: 530px;
+    background-color: white;
+    /* text-align: center; */
+}
+
+.score-div{
+    width: 100%;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+}
+.score-h{
+    margin: 0px;
+    text-align: center;
+}
+.score-my-para{
+    margin-block: 5px;
+    text-align: center;
+    font-size: 2rem;
+    
+    
+}
+
+.score-comp-para{
+    margin-block: 5px;
+    text-align: center;
+    font-size: 2rem;
+    
+}
+.score-tie{
+    margin-block: 5px;
+    text-align: center;
+    font-size: 2rem;
+    
+}
+.score-board{
+    margin-top: 0px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.2rem;
+}
+
+
+@media (max-width:500px) {
+     .nav-bar{
+        width:100%;
+        position: absolute;
+        left:0px;
+        top: 0px;
+    }
+
+    .icon{
+        
+        position:absolute;
+        left: 0px;
+    }
+    .name{
+        width: 300px;
+        font-size: 1.6rem;
+        position:absolute;
+        left: 110px;
+        top: 20px;
+    }
+
+    .action_div{
+        width: 95%;
+    }
+    .me,.computer{
+        width:120px;
+        height: 80px;
+        
+        margin-top: 100px;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .name-tag{
+        font-size: 1rem;
+        margin-top: 10px ;
+    }
+
+    .rock,.paper,.scissor,.rock-c,.paper-c,.scissor-c,.my-value,.computer-value{
+        width: 30px;
+        height: 30px;
+    }
+
+    h3{
+        margin: 0px;
+        width: 250px;
+        position: absolute;
+        top: 210px;
+    }
+
+    .js-section{
+        left: 30px;
+        height: 150px;
+
+
+    }
+
+    .answer{
+        width:180px;
+        height: 80px;
+        
+    }
+
+    
+    .score{
+        left: 60px;
+    }
+
+
+    .scissor-animation{
+        animation: drag-scissor .5s linear 0s forwards;
+    }
+    
+    @keyframes drag-scissor{
+        0%{
+            z-index: 2;
+            transform: translate(0px,0px);
+        }
+        100%{
+            z-index: 2;
+            transform: translate(-45px,175px);
+        }
+        
+    
+    }
+
+    .scissor-c-animation{
+        animation: drag-scissor-c .5s linear 0s forwards;
+    }
+    
+    @keyframes drag-scissor-c{
+        0%{
+            z-index: 2;
+            transform: translate(0px,0px);
+        }
+        100%{
+            z-index: 2;
+            transform: translate(-18px,175px);
+        }
+        
+    
+    }
+
+
+    .rock-animation{
+        animation: drag-rock .5s linear 0s forwards;
+    }
+    
+    @keyframes drag-rock{
+        0%{
+            z-index: 2;
+            transform: translate(0px,0px);
+        }
+        100%{
+            z-index: 2;
+            transform: translate(36px,176px);
+        }
+        
+    
+    }
+
+    .rock-c-animation{
+        animation: drag-rock-c .5s linear 0s forwards;
+    }
+    
+    @keyframes drag-rock-c{
+        0%{
+            z-index: 2;
+            transform: translate(0px,0px);
+        }
+        100%{
+            z-index: 2;
+            transform: translate(63px,176px);
+        }
+        
+    
+    }
+
+    .paper-animation{
+        animation: drag-paper .5s linear 0s forwards;
+    }
+    
+    @keyframes drag-paper{
+        0%{
+            z-index: 2;
+            transform: translate(0px,0px);
+        }
+        100%{
+            z-index: 2;
+            transform: translate(-4px,175px);
+        }
+        
+    
+    }
+
+    .paper-c-animation{
+        animation: drag-paper-c .5s linear 0s forwards;
+    }
+    
+    @keyframes drag-paper-c{
+        0%{
+            z-index: 2;
+            transform: translate(0px,0px);
+        }
+        100%{
+            z-index: 2;
+            transform: translate(22px,175px);
+        }
+        
+    
+    }
+    .vs{
+        display: flex;
+        align-items: flex-end;
+    }
+    .vs-h1{
+        font-size: 3rem;
+
+    }
+
+}
+
